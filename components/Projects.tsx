@@ -3,17 +3,19 @@ import Link from "next/link"
 
 const ProjectCard = (props: {name: string, descript: string, photoSrc: string, websiteUrl: string}) => {
     return (
-        <Link
-            href={props.websiteUrl}
-            target="_blank"
-            className="flex flex-col border-2 border-black hover:border-yellow-300 rounded-md w-[300px] h-[450px]"
-        >
-            <Image src={props.photoSrc} width={300} height={300} alt="" className="rounded-sm" />
-            <div className="flex flex-col px-3">
-                <Link href={props.websiteUrl} className="text-xl font-bold underline hover:text-yellow-300">{props.name}</Link>
-                <p>{props.descript}</p>
-            </div>
-        </Link>
+        <div>
+            <Link
+                href={props.websiteUrl}
+                target="_blank"
+                className="flex flex-col border-2 border-black hover:border-yellow-300 rounded-md w-[300px] h-[450px]"
+            >
+                <Image src={props.photoSrc} width={300} height={300} alt="" className="rounded-sm" />
+                <div className="flex flex-col px-3">
+                    <p className="text-xl font-bold underline hover:text-yellow-300">{props.name}</p>
+                    <p>{props.descript}</p>
+                </div>
+            </Link>
+        </div>
     )
 }
 

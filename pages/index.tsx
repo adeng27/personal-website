@@ -1,3 +1,4 @@
+import Footer from "@/components/Footer";
 import { HeroSec } from "@/components/HeroSection";
 import { Navbar } from "@/components/Navbar";
 import { Projects } from "@/components/Projects";
@@ -11,9 +12,10 @@ export default function Home() {
       className={`${inter.className}`}
     >
       <Navbar />
-      <div className="flex flex-col gap-4">
+      <div className="flex flex-col gap-8">
         <HeroSec />
         <Projects />
+        <Footer />
       </div>
     </main>
   );
