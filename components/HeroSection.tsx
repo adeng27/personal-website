@@ -75,7 +75,7 @@ export const HeroSec = () => {
                 </div>
             </div> */}
             <div className="flex flex-col w-[760px] min-h-[400px] h-fit justify-center gap-4">
-                <h1 className="text-2xl font-bold">Alastair Deng</h1>
+                {/* <h1 className="text-2xl font-bold">Alastair Deng</h1> */}
                 <p className="text-lg font-semibold">B.S. Student in CS @ Stanford (2027), Valedictorian @ Ben Franklin High School (2023)</p>
                 <p className="text-lg">
                     I am an undergraduate student in Computer Science at Stanford University. 
