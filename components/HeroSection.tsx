@@ -50,7 +50,7 @@ export const HeroSec = () => {
             </div>
         </div>
 
-        <div className="flex md:hidden justify-center items-center gap-12 w-screen bg-gray-300 h-[450px] px-8">
+        <div className="flex md:hidden justify-center items-center gap-12 w-screen bg-gray-300 min-h-[450px] h-fit px-8">
             {/* <div className="flex flex-col items-center justify-center gap-3 h-[400px]">
                 <Image 
                     src={"/personal_website_photo.JPG"} 
@@ -74,7 +74,7 @@ export const HeroSec = () => {
                     </Link>
                 </div>
             </div> */}
-            <div className="flex flex-col w-[760px] h-[400px] justify-center gap-4">
+            <div className="flex flex-col w-[760px] min-h-[400px] h-fit justify-center gap-4">
                 <h1 className="text-2xl font-bold">Alastair Deng</h1>
                 <p className="text-lg font-semibold">B.S. Student in CS @ Stanford (2027), Valedictorian @ Ben Franklin High School (2023)</p>
                 <p className="text-lg">
