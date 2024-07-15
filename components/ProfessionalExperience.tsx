@@ -79,7 +79,7 @@ const TimelineCard = (props: TimelineCardProps) => {
             </div>
             <div className="flex flex-col md:hidden gap-4 justify-center items-center">
                 <Image className="rounded-full border-slate-600 border-4 max-w-[160px] max-h-[160px]" src={props.imageUrl} width={160} height={160} alt="" />
-                <div className="flex flex-col gap-2 max-w-md">
+                <div className="flex flex-col gap-2 max-w-md p-4">
                     <h2 className="text-xl font-bold">{props.startDate} - {props.endDate}</h2>
                     <h2 className="text-xl font-bold">
                         <span className="text-yellow-500">{props.companyName}</span>, {props.positionTitle}
