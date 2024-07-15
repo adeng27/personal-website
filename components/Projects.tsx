@@ -21,7 +21,7 @@ const ProjectCard = (props: {name: string, descript: string, photoSrc: string, w
 
 export const Projects = () => {
     return (
-        <div className="flex flex-col items-center gap-8 bg-[#ECEEEF] py-4">
+        <div className="flex flex-col items-center gap-8 bg-[#ECEEEF] px-4">
             <h1 className="text-4xl font-bold">Personal Projects</h1>
             <div className="hidden md:flex justify-center gap-20">
                 <ProjectCard 

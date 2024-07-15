@@ -4,7 +4,7 @@ import Link from "next/link"
 export const HeroSec = () => {
     return (
       <div>
-        <div className="hidden md:flex justify-center items-center gap-12 w-screen bg-gray-300 h-[450px] px-8">
+        <div className="hidden md:flex justify-center items-center gap-12 w-screen bg-gray-300 min-h-[450px] h-fit p-8">
             <div className="flex flex-col items-center justify-center gap-3 h-[400px]">
                 <Image 
                     src={"/personal_website_photo.JPG"} 
