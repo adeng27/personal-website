@@ -20,7 +20,8 @@ export const ProfessionalExperience = () => {
             startDate: "6/30/2024", 
             endDate: "Present",
             description: "Developing a user portal to manage superclusters for UC Berkeley and the Berkeley National Lab researchers. \
-                            This portal replaces Google Forms and ticket workflows for account management.",
+                            This portal replaces Google Forms and ticket workflows for account management. \
+                            The portal currently manages 5000+ users and 1000+ projects.",
             location: "Berkeley, CA",
             textOnRight: true
         },
@@ -31,8 +32,8 @@ export const ProfessionalExperience = () => {
             startDate: "4/01/2024", 
             endDate: "Present",
             description: "Primary developer for art feedback research project which explores the potential of automated art feedback for novice artists. \
-                            I am responsible for creating the code to test various forms of automated art feedback, which includes the development of the  \
-                            drawing process, data collection, and automated feedback.",
+                            I am responsible for development of the drawing process (paper.js + React.js), data collection (MongoDB), and automated feedback \
+                            (built entirely custom Javascript library which evaluates drawings based off perspective).",
             location: "Stanford, CA",
             textOnRight: false
         }
@@ -53,7 +54,9 @@ const TimelineCard = (props: TimelineCardProps) => {
                 {
                     props.textOnRight ? 
                         <div className="flex gap-8">
-                            <Image className="rounded-full border-slate-600 border-4 max-w-[160px] max-h-[160px]" src={props.imageUrl} width={160} height={160} alt="" />
+                            <div className="flex justify-center items-center">
+                                <Image className="rounded-full border-slate-600 border-4 max-w-[160px] max-h-[160px]" src={props.imageUrl} width={160} height={160} alt="" />
+                            </div>
                             <div className="flex flex-col gap-2 max-w-md">
                                 <h2 className="text-xl font-bold">{props.startDate} - {props.endDate}</h2>
                                 <h2 className="text-xl font-bold">
@@ -73,7 +76,9 @@ const TimelineCard = (props: TimelineCardProps) => {
                             <h3 className="text-lg italic">{props.location}</h3>
                             <p>{props.description}</p>
                         </div>
-                        <Image className="rounded-full border-slate-600 border-4 max-w-[160px] max-h-[160px]" src={props.imageUrl} width={160} height={160} alt="" />
+                        <div className="flex justify-center items-center">
+                            <Image className="rounded-full border-slate-600 border-4 max-w-[160px] max-h-[160px]" src={props.imageUrl} width={160} height={160} alt="" />
+                        </div>
                     </div> 
                 } 
             </div>
